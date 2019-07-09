@@ -39,7 +39,7 @@ export default class PulsesScreen extends React.Component {
         </View>
         <View style={styles.row}>
           <CategoryTile backgroundColor='#d1d1d1' source={require('../images/whitePeas.jpg')} name='White peas' onSelectCategory={this.handleSelectCategory} />
-          <CategoryTile backgroundColor='#aaaaaa' source={require('../images/cowpeas.jpg')} name='Cowpeas' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#aaaaaa' source={require('../images/cowpea.jpg')} name='Cowpea' onSelectCategory={this.handleSelectCategory} />
         </View>
       </ScrollView>
     )
