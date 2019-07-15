@@ -26,15 +26,17 @@ const ProductTile = props => (
         <Image style={styles.image} source={{uri: props.product.productImagePath[0]}} />
       </View>
       <View style={styles.rightContainer}>
-        <Text style={{fontSize: 18}}>{props.product.displayName}</Text>
-        <Text style={{fontSize: 17}}>{props.product.weightOfPack}</Text>
-        <Text style={{fontSize: 12}}>by {props.product.sellerName}</Text>
-        <Text style={{fontSize: 17}}>{'\u20B9'} {props.product.price}</Text>
+        <View style={{flex:1}}>
+          <Text style={{fontSize: 18}}>{props.product.displayName}</Text>
+          <Text style={{fontSize: 17}}>{props.product.weightOfPack}</Text>
+          <Text style={{fontSize: 12}}>by {props.product.sellerName}</Text>
+          <Text style={{fontSize: 17}}>{'\u20B9'} {props.product.price}</Text>
+        </View>
         {(() => {
           switch (props.screen) {
             case 'Cart':
               return (
-                <View style={{flex: 1, left: 1, top: 5, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
+                <View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
                   <QuantityChanger
                     count={props.product.productCount}
                     onInc={() => props.onInc(props.product)}
@@ -76,8 +78,8 @@ const ProductTile = props => (
               )
             case 'OrderDetails':
               return (
-                <View style={{position: 'absolute', bottom: 7, left: 7}}>
-                  <View style={{paddingBottom: 5}}>
+                <View style={{position: 'absolute', bottom: 7, right: 7}}>
+                  <View style={{paddingBottom: 5, flexDirection: 'row', justifyContent: 'flex-end'}}>
                     <Text style={{fontSize: 16}}>Quantity: {props.product.productCount}</Text>
                   </View>
                   <Button color='#616161' title='Write a product review' />
@@ -98,7 +100,7 @@ const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
     flexDirection: 'row',
-    height: Dimensions.get('window').height / 4,
+    height: Dimensions.get('window').height / 3.7,
     backgroundColor: '#e2e2e2',
     borderColor: 'black',
     borderWidth: 1,
@@ -117,6 +119,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: (Dimensions.get('window').width * 0.4) - 15,
-    height: (Dimensions.get('window').height / 4) - 10,
+    height: (Dimensions.get('window').height / 3.7) - 10,
+    resizeMode: 'contain',
   },
 })
