@@ -23,23 +23,23 @@ export default class PulsesScreen extends React.Component {
     return (
       <ScrollView style={styles.mainContainer}>
         <View style={styles.row}>
-          <CategoryTile backgroundColor='#d1d1d1' source={require('../images/redLentils.jpg')} name='Red lentils' onSelectCategory={this.handleSelectCategory} />
-          <CategoryTile backgroundColor='#c6c6c6' source={require('../images/greenGram.jpg')} name='Green gram' onSelectCategory={this.handleSelectCategory} />
-          <CategoryTile backgroundColor='#aaaaaa' source={require('../images/blackGram.jpg')} name='Black gram' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#d1d1d1' source={require('../assets/images/redLentils.jpg')} name='Red lentils' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#c6c6c6' source={require('../assets/images/greenGram.jpg')} name='Green gram' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#aaaaaa' source={require('../assets/images/blackGram.jpg')} name='Black gram' onSelectCategory={this.handleSelectCategory} />
         </View>
         <View style={styles.row}>
-          <CategoryTile backgroundColor='#717171' source={require('../images/bengalGram.jpg')} name='Bengal gram' onSelectCategory={this.handleSelectCategory} />
-          <CategoryTile backgroundColor='#8d8d8d' source={require('../images/turkishGram.jpg')} name='Turkish gram' onSelectCategory={this.handleSelectCategory} />
-          <CategoryTile backgroundColor='#555555' source={require('../images/kidneyBeans.jpg')} name='Kidney beans' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#717171' source={require('../assets/images/bengalGram.jpg')} name='Bengal gram' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#8d8d8d' source={require('../assets/images/turkishGram.jpg')} name='Turkish gram' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#555555' source={require('../assets/images/kidneyBeans.jpg')} name='Kidney beans' onSelectCategory={this.handleSelectCategory} />
         </View>
         <View style={styles.row}>
-          <CategoryTile backgroundColor='#4f4f4f' source={require('../images/chickpeas.jpg')} name='Chickpeas' onSelectCategory={this.handleSelectCategory} />
-          <CategoryTile backgroundColor='#d1d1d1' source={require('../images/brownLentils.jpg')} name='Brown lentils' onSelectCategory={this.handleSelectCategory} />
-          <CategoryTile backgroundColor='#aaaaaa' source={require('../images/pigeonPeas.jpg')} name='Pigeon peas' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#4f4f4f' source={require('../assets/images/chickpeas.jpg')} name='Chickpeas' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#d1d1d1' source={require('../assets/images/brownLentils.jpg')} name='Brown lentils' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#aaaaaa' source={require('../assets/images/pigeonPeas.jpg')} name='Pigeon peas' onSelectCategory={this.handleSelectCategory} />
         </View>
         <View style={styles.row}>
-          <CategoryTile backgroundColor='#d1d1d1' source={require('../images/whitePeas.jpg')} name='White peas' onSelectCategory={this.handleSelectCategory} />
-          <CategoryTile backgroundColor='#aaaaaa' source={require('../images/cowpea.jpg')} name='Cowpea' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#d1d1d1' source={require('../assets/images/whitePeas.jpg')} name='White peas' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#aaaaaa' source={require('../assets/images/cowpea.jpg')} name='Cowpea' onSelectCategory={this.handleSelectCategory} />
         </View>
       </ScrollView>
     )

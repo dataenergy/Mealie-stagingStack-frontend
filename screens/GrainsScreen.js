@@ -23,22 +23,22 @@ export default class GrainsScreen extends React.Component {
     return (
       <ScrollView style={styles.mainContainer}>
         <View style={styles.row}>
-          <CategoryTile backgroundColor='#d1d1d1' source={require('../images/rice.jpg')} name='Rice' onSelectCategory={this.handleSelectCategory} />
-          <CategoryTile backgroundColor='#c6c6c6' source={require('../images/wheat.jpg')} name='Wheat' onSelectCategory={this.handleSelectCategory} />
-          <CategoryTile backgroundColor='#aaaaaa' source={require('../images/quinoa.jpg')} name='Quinoa' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#d1d1d1' source={require('../assets/images/rice.jpg')} name='Rice' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#c6c6c6' source={require('../assets/images/wheat.jpg')} name='Wheat' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#aaaaaa' source={require('../assets/images/quinoa.jpg')} name='Quinoa' onSelectCategory={this.handleSelectCategory} />
         </View>
         <View style={styles.row}>
-          <CategoryTile backgroundColor='#717171' source={require('../images/barley.jpg')} name='Barley' onSelectCategory={this.handleSelectCategory} />
-          <CategoryTile backgroundColor='#8d8d8d' source={require('../images/oats.jpg')} name='Oats' onSelectCategory={this.handleSelectCategory} />
-          <CategoryTile backgroundColor='#555555' source={require('../images/ragi.jpg')} name='Ragi' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#717171' source={require('../assets/images/barley.jpg')} name='Barley' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#8d8d8d' source={require('../assets/images/oats.jpg')} name='Oats' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#555555' source={require('../assets/images/ragi.jpg')} name='Ragi' onSelectCategory={this.handleSelectCategory} />
         </View>
         <View style={styles.row}>
-          <CategoryTile backgroundColor='#4f4f4f' source={require('../images/bajra.jpg')} name='Bajra' onSelectCategory={this.handleSelectCategory} />
-          <CategoryTile backgroundColor='#d1d1d1' source={require('../images/jowar.jpg')} name='Jowar' onSelectCategory={this.handleSelectCategory} />
-          <CategoryTile backgroundColor='#aaaaaa' source={require('../images/semolina.jpg')} name='Semolina' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#4f4f4f' source={require('../assets/images/bajra.jpg')} name='Bajra' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#d1d1d1' source={require('../assets/images/jowar.jpg')} name='Jowar' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#aaaaaa' source={require('../assets/images/semolina.jpg')} name='Semolina' onSelectCategory={this.handleSelectCategory} />
         </View>
         <View style={styles.row}>
-          <CategoryTile backgroundColor='#d1d1d1' source={require('../images/buckwheat.jpg')} name='Buckwheat' onSelectCategory={this.handleSelectCategory} />
+          <CategoryTile backgroundColor='#d1d1d1' source={require('../assets/images/buckwheat.jpg')} name='Buckwheat' onSelectCategory={this.handleSelectCategory} />
         </View>
       </ScrollView>
     )
