@@ -41,28 +41,36 @@ export default class AddAddressForm extends React.Component {
         <View style={{padding: 10}}>
           <Text style={{fontSize: 22}}>Enter a delivery address</Text>
         </View>
-        <Text>Name*</Text>
+        <View style={{paddingLeft: 10}}>
+          <Text>Name*</Text>
+        </View>
         <TextInput
           style={styles.input}
           value={this.state.name}
           onChangeText={this.getHandler('name')}
           placeholder='Full name'
-          />
-        <Text>Address1*</Text>
+        />
+        <View style={{paddingLeft: 10}}>
+          <Text>Address1*</Text>
+        </View>
         <TextInput
           style={styles.input}
           value={this.state.address1}
           onChangeText={this.getHandler('address1')}
           placeholder='Address1'
         />
-        <Text>Address2</Text>
+        <View style={{paddingLeft: 10}}>
+          <Text>Address2</Text>
+        </View>
         <TextInput
           style={styles.input}
           value={this.state.address2}
           onChangeText={this.getHandler('address2')}
           placeholder='Address2'
         />
-        <Text>Pincode*</Text>
+        <View style={{paddingLeft: 10}}>
+          <Text>Pincode*</Text>
+        </View>
         <TextInput
           style={styles.input}
           value={this.state.pincode}
@@ -70,7 +78,9 @@ export default class AddAddressForm extends React.Component {
           keyboardType='numeric'
           placeholder='Pincode'
         />
-        <Text>Phone*</Text>
+        <View style={{paddingLeft: 10}}>
+          <Text>Phone*</Text>
+        </View>
         <TextInput
           style={styles.input}
           value={this.state.phone}
@@ -104,7 +114,9 @@ const styles = StyleSheet.create({
   },
   input: {
     padding: 10,
-    margin: 10,
+    marginHorizontal: 10,
+    marginBottom: 10,
+    marginTop: 1,
     borderColor: 'black',
     borderWidth: 1,
   },
