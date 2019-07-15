@@ -26,7 +26,7 @@ export const googleLogin = async () => {
 //Initiate a GET request with the specified pathname to get the product listing
 export const getProductList = async (pathName) => {
   try {
-    const response = await fetch(`http://192.168.1.4:5000${pathName}`)
+    const response = await fetch(`https://e8a31f8b.ngrok.io${pathName}`)
     const result = await response.json()
     // console.log(response)
     // console.log(result)
@@ -38,7 +38,7 @@ export const getProductList = async (pathName) => {
 
 //A POST request to add new document for every order
 export const createNewOrderDoc = async orderDetails => {
-  const response = await fetch('http://192.168.1.4:5000/api/order/create', {
+  const response = await fetch('https://e8a31f8b.ngrok.io/api/order/create', {
     method: 'POST',
     headers: {'content-type': 'application/json'},
     body: JSON.stringify(orderDetails)
@@ -50,7 +50,7 @@ export const createNewOrderDoc = async orderDetails => {
 
 //A POST request to get user order history
 export const getOrderHistory = async email => {
-  const response = await fetch('http://192.168.1.4:5000/api/order/read', {
+  const response = await fetch('https://e8a31f8b.ngrok.io/api/order/read', {
     method: 'POST',
     headers: {'content-type': 'application/json'},
     body: JSON.stringify({userEmail: email})
