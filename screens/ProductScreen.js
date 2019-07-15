@@ -129,7 +129,7 @@ class ProductScreen extends React.Component {
           {this.props.navigation.getParam('product').productImagePath.map((path, index) =>
             <Image
               key={index}
-              style={{marginHorizontal: (Dimensions.get('window').width * 0.4)/2, width: Dimensions.get('window').width * 0.6, height: Dimensions.get('window').width * 0.6}}
+              style={styles.image}
               source={{uri: path}} />
           )}
         </ScrollView>
@@ -189,5 +189,11 @@ const styles = StyleSheet.create({
   text: {
     padding: 5,
     fontSize: 17,
+  },
+  image: {
+    marginHorizontal: (Dimensions.get('window').width * 0.4)/2,
+    width: Dimensions.get('window').width * 0.6,
+    height: Dimensions.get('window').width * 0.6,
+    resizeMode: 'contain',
   },
 })
