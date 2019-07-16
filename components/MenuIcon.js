@@ -6,7 +6,7 @@ class MenuIcon extends React.Component {
   render() {
     return (
       <TouchableOpacity style={styles.icon} onPress={() => this.props.navigation.toggleDrawer()}>
-        <Image source={require('../images/menuIcon.png')}/>
+        <Image source={require('../assets/images/menuIcon.png')}/>
       </TouchableOpacity>
     )
   }

@@ -6,7 +6,7 @@ class SearchIcon extends React.Component {
   render() {
     return (
       <TouchableOpacity style={styles.icon} onPress={() => this.props.navigation.navigate('ProductSearch')}>
-        <Image source={require('../images/searchIcon.png')}/>
+        <Image source={require('../assets/images/searchIcon.png')}/>
       </TouchableOpacity>
     )
   }
